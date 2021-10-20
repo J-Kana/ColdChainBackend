@@ -1,4 +1,4 @@
-var CronJob = require('cron').CronJob;
+var CronJob = require('cron').CronJob; 
 const WS = require('ws');
 const db = require("../models");
 const Op = db.Sequelize.Op;
