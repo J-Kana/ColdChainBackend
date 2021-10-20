@@ -1,6 +1,4 @@
 const {Sequelize,DataTypes } = require("sequelize");
-// Change the url to the localhost when connecting to the 213 machine
-// const sequelize = new Sequelize('postgres://postgreadmin:postgres@185.125.44.213:5432/coldchain')
 const sequelize = new Sequelize(`postgres://${process.env.USER_DB}:${process.env.PASSWORD_DB}@${process.env.HOST_DB}:${process.env.PORT_DB}/${process.env.DATABASE_DB}`)
 const db = {};
 
