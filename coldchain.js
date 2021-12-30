@@ -74,13 +74,6 @@ require('./routes/V1/firebase_token.routes')(app);
 
 /***********************************************************************************************/
 
-// app.use((req, res) => {
-//     return res.status(404).send({ message: 'Route' + req.url + ' Not found.' })
-// })
-// // 500 - Any server error
-// app.use((req, res) => {
-//     return res.status(404).send({ message: 'Route' + req.url + ' Not found.' })
-// })
 app.use(express.static(path.join(__dirname, 'build')))
 
 app.use((req, res) => {
